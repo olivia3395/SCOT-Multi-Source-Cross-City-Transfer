@@ -13,6 +13,15 @@ For **multi-source transfer**, SCOT aligns each source and the target to a share
 
 ## Setup
 
+```bash
+pip uninstall torch-geometric torch_sparse torch_scatter torch_cluster torch_spline_conv -y
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+pip install torch-sparse   -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+pip install torch-cluster  -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+pip install torch-spline-conv -f https://data.pyg.org/whl/torch-2.4.0+cpu.html
+pip install torch-geometric
+```
+
 ### Single-source transfer (e.g., BJ → CD)
 
 ```bash
