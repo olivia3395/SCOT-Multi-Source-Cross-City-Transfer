@@ -1,7 +1,5 @@
 
-# SCOT-Multi-Source-Cross-City-Transfer
-
-**SCOT**: *Multi-Source Cross-City Transfer with Optimal-Transport Soft-Correspondence Objectives*.
+# **SCOT**: *Multi-Source Cross-City Transfer with Optimal-Transport Soft-Correspondence Objectives*.
 
 SCOT learns **explicit soft correspondences** between cities/regions using **Sinkhorn-based entropic OT**, enhanced by **OT-guided contrastive alignment** and **cycle-style reconstruction**.  
 For **multi-source transfer**, SCOT aligns each source and the target to a shared **prototype hub** via **balanced entropic transport** (optionally with a **target-induced prototype prior**).
