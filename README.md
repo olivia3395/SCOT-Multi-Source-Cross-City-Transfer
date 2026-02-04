@@ -28,7 +28,8 @@ python train.py
 ### Multi-source transfer with hub (e.g., BJ + XA → CD)
 
 ```bash
-python train_hub.py 
+python train_hub.py
+```
 ---
 
 ## Key Args
