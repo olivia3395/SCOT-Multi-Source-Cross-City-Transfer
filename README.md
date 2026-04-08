@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/ICML-2026-blue?style=flat-square&logo=academia" />
 <img src="https://img.shields.io/badge/Python-3.9+-3776AB?style=flat-square&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/PyTorch-2.4+-EE4C2C?style=flat-square&logo=pytorch&logoColor=white" />
 <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" />
