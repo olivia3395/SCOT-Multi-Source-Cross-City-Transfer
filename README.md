@@ -199,12 +199,6 @@ plot_hub_sharpness(Q_history, K=32)
 plot_tsne(z_s, z_t, labels=["Xi'an", "Beijing"])
 ```
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/placeholder/scot/main/assets/diagnostics.png" width="75%" alt="Diagnostics"/>
-<br/><sub><b>Figure 4:</b> (Left) OT coupling heatmap showing selective block structure. (Right) Hub assignment sharpness — <i>q</i><sub>ent</sub>/log<i>K</i> ≈ 0.4 implies ~4 active prototypes per region.</sub>
-</div>
-
-
 
 ## 📚 Citation
 
