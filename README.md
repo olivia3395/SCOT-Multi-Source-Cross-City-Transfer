@@ -49,7 +49,7 @@ Cross-city transfer improves prediction in **label-scarce cities** (e.g., GDP, p
 <br/>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/placeholder/scot/main/assets/pipeline.png" width="80%" alt="SCOT Pipeline"/>
+<img src="pipeline.png" width="80%" alt="SCOT Pipeline"/>
 <br/><sub><b>Figure 1:</b> SCOT pipeline — GAT encoders produce region embeddings, Sinkhorn OT computes soft correspondences P, and the OT-weighted contrastive loss sharpens semantic alignment.</sub>
 </div>
 
@@ -72,19 +72,15 @@ Cross-city transfer improves prediction in **label-scarce cities** (e.g., GDP, p
 
 ### Single-Source: Sinkhorn Soft Correspondence
 
-Given normalized embeddings $\tilde{\mathbf{z}}^s, \tilde{\mathbf{z}}^t$, SCOT computes a cross-city cost matrix and runs Sinkhorn iterations to obtain a smooth, capacity-controlled coupling:
-
-$$\mathbf{P} = \text{diag}(\mathbf{u}^{(T)}) \, \mathbf{K} \, \text{diag}(\mathbf{v}^{(T)}), \quad \mathbf{K} = \exp(-\mathbf{C}/\varepsilon)$$
-
-The coupling $\mathbf{P}$ simultaneously drives:
-- **OT alignment loss** $\mathcal{L}_\text{OT}$ — geometric closeness
-- **OT-weighted contrastive loss** $\mathcal{L}_\text{Con}$ — semantic discriminability
-- **Cycle reconstruction** $\mathcal{L}_\text{Rec}$ — training stability
+Given normalized embeddings, SCOT computes a cross-city cost matrix and runs Sinkhorn iterations to obtain a smooth, capacity-controlled coupling. The coupling $\mathbf{P}$ simultaneously drives:
+- **OT alignment loss** 
+- **OT-weighted contrastive loss** 
+- **Cycle reconstruction** 
 
 ### Multi-Source: Shared Prototype Hub
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/placeholder/scot/main/assets/hub.png" width="70%" alt="Hub Alignment"/>
+<img src="hub.png" width="70%" alt="Hub Alignment"/>
 <br/><sub><b>Figure 2:</b> Multi-source hub alignment — each city aligns to K shared learnable prototypes via balanced entropic OT, guided by a target-induced prototype prior.</sub>
 </div>
 
