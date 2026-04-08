@@ -19,7 +19,7 @@
 
 <br/>
 
-[![Paper](https://img.shields.io/badge/📄_Paper-ICML_2026-blue?style=for-the-badge)](https://arxiv.org)
+[![Paper](https://img.shields.io/badge/📄_Paper-PDF-blue?style=for-the-badge)](https://arxiv.org)
 [![Poster](https://img.shields.io/badge/🖼️_Poster-PDF-orange?style=for-the-badge)](#)
 [![Slides](https://img.shields.io/badge/📊_Slides-PDF-purple?style=for-the-badge)](#)
 
