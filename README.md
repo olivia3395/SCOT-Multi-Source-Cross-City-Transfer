@@ -90,9 +90,7 @@ The coupling $\mathbf{P}$ simultaneously drives:
 
 <br/>
 
-Instead of independent pairwise alignments (which cause gradient conflicts), all cities align to a **shared hub** of $K$ learnable prototypes. A **target-induced prototype marginal** $\mathbf{b}$ focuses hub capacity on target-relevant semantics:
-
-$$\bar{s}_k = \frac{1}{n_t}\sum_j \tilde{\mathbf{z}}^{t\top}_j \tilde{\mathbf{a}}_k, \qquad b_k \propto \max\!\left\{\exp(\bar{s}_k / \tau_b),\; \epsilon_b\right\}$$
+Instead of independent pairwise alignments (which cause gradient conflicts), all cities align to a **shared hub** of $K$ learnable prototypes. A **target-induced prototype marginal** $\mathbf{b}$ focuses hub capacity on target-relevant semantics.
 
 
 
@@ -125,22 +123,8 @@ $$\bar{s}_k = \frac{1}{n_t}\sum_j \tilde{\mathbf{z}}^{t\top}_j \tilde{\mathbf{a}
 
 </div>
 
-<br/>
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/placeholder/scot/main/assets/radar.png" width="65%" alt="Radar Chart"/>
-<br/><sub><b>Figure 3:</b> Radar-chart matrix for all city-pair transfers — SCOT (red) consistently achieves the smallest polygon area, indicating best overall performance.</sub>
-</div>
 
 
-
-## 📐 Theoretical Guarantee
-
-**Theorem 3.1** bounds the target MAE via the source MAE plus a transfer gap explicitly controlled by $\mathcal{L}_\text{Con}$:
-
-$$\mathcal{R}^b_t(h) \;\leq\; \mathcal{R}^a_s(h) + (L_h + L_g)\sqrt{2 - 2\,m}$$
-
-where $m$ increases as $\mathcal{L}_\text{Con}$ decreases — **stronger contrastive alignment directly tightens the generalization bound**.
 
 
 ## 🚀 Quick Start
