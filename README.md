@@ -182,24 +182,6 @@ python train_hub.py --sources BJ XA --target CD \
 
 
 
-## 🔬 Diagnostics
-
-SCOT provides built-in interpretability tools to inspect alignment quality:
-
-```python
-from utils.diagnostics import plot_ot_coupling, plot_hub_sharpness, plot_tsne
-
-# Visualize the learned OT transport plan
-plot_ot_coupling(P, title="XA → BJ (epoch 100)")
-
-# Track hub assignment sharpness over training
-plot_hub_sharpness(Q_history, K=32)
-
-# t-SNE of aligned embeddings
-plot_tsne(z_s, z_t, labels=["Xi'an", "Beijing"])
-```
-
-
 ## 📚 Citation
 
 If you find this work useful, please cite:
